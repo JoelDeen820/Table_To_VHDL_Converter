@@ -1,4 +1,4 @@
-from Gates import *
+from Gates.TwoInputOperator import TwoInputOperator
 
 class ANDGate(TwoInputOperator):
 

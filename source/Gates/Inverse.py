@@ -1,5 +1,6 @@
 from Gates import *
 
-class Inverse(TwoInputOperator):
+class Inverse(SingleInputGate):
 
-    def __init__(self, value1)
+    def toVHDL(self):
+        return "( not " + value1.toVHDL() + " )"

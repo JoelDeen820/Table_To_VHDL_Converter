@@ -4,10 +4,10 @@ import csv
 class Circuit:
 
     def __init__(self, fileName):
-        file = open(filename, "r")
+        file = open(fileName, "r")
         tempTuple = csv.reader(file)
-        self.table = (list)tempTuple
-        for row in self.table:
+        # self.table = (list)tempTuple
+        
 
     def __processHeader(self):
         self.header = self.table.pop(0)

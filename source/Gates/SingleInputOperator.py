@@ -3,4 +3,10 @@
 class SingleInputGate:
 
     def __init__(self, value1): 
-        self.val1_is_nested = isinstance()
+        self.value1 = value1.copy()
+    
+    def copy(self):
+        return SingleInputGate(self.value1.copy())
+    
+    def toVHDL(self):
+        pass

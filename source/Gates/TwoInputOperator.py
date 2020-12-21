@@ -13,12 +13,8 @@ class TwoInputOperator:
 
 
     def copy(self):
-        val1 = self.value1
-        val2 = self.value2
-        if self.val1_is_nested:
-            val1 = self.value1.copy()
-        if self.val2_is_nested:
-            val1 = self.value2.copy()
+        val1 = self.value1.copy()
+        val2 = self.value2.copy()
         return TwoInputOperator(val1, val2)
     
     def toString(self):
